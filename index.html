@@ -21,8 +21,8 @@
 
 <body>
 		<div id="itTDKdIcawbo">
-				Our website is made possible by displaying online advertisements to our visitors.<br>
-				Please consider supporting us by disabling your ad blocker.
+				We noticed you use an adblocker, to be able to see our banners work please disable it and <a href="/">refresh</a> the page.<br>
+				
 			</div>
 			
 	<section id="top">
@@ -430,7 +430,11 @@
 	<script type="text/javascript">
 
 		if(!document.getElementById('JnGkCAVWcxbU')){
-			document.getElementById('itTDKdIcawbo').style.display='block';
+			let pop = document.getElementById('itTDKdIcawbo');
+			pop.style.display="block";
+			setTimeout(()=>pop.classList.add('popup'),1000);
+			
+			
 		}
 		
 		</script>
