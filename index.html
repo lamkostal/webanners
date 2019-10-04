@@ -15,15 +15,15 @@
 	
 	  
 
-	<title> Webbanners </title>
+	<title> Webanners </title>
 
 </head>
 
 <body>
-		<div id="itTDKdIcawbo">
-				We noticed you use an adblocker, to be able to see our banners work please disable it and <a href="/">refresh</a> the page.<br>
+		<div id="modalcontainer">
+				<div class="mymodal"><p>We noticed you use an adblocker, to be able to see our banners work please disable it and <a href="/">refresh</a> the page.<br></p></div>
 				
-			</div>
+		</div>
 			
 	<section id="top">
 
@@ -430,9 +430,11 @@
 	<script type="text/javascript">
 
 		if(!document.getElementById('JnGkCAVWcxbU')){
-			let pop = document.getElementById('itTDKdIcawbo');
+			let pop = document.getElementById('modalcontainer');
 			pop.style.display="block";
-			setTimeout(()=>pop.classList.add('popup'),1000);
+			pop.style.position="fixed";
+
+			setTimeout(()=>pop.classList.add('popup'),3000);
 			
 			
 		}

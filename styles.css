@@ -380,31 +380,40 @@ clip-path: polygon(45% 0, 85% 0, 60% 100%, 15% 100%);
 	}
 }
 /* /////////////POP UP FOR ADBLOCKERS//////////////// */
-#itTDKdIcawbo {
+#modalcontainer {
 	display: none;
-    padding: 100px 50px;
-    background: #b89a47;
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 5px;
-    width: 600px;
-    margin: auto;
-    left: calc(50% - 300px);
-	opacity: 0;
+	width:100vw;
+	height: 100vh;
 	z-index: 1000;
-	transform: scale(0);
-	font-size: 25px;
-	max-width:(100% - 40px);
+	background: #1f282496;
+	position: absolute;
+	top:0;
+	opacity: 0;
+	/* transform: scale(0); */
 	
 	}
+	.mymodal{
+		display:flex;
+		align-items: center;
+		padding: 100px 50px;
+		background: #b89a47;
+		text-align: center;
+		font-weight: bold;
+		color: #fff;
+		border-radius: 5px;
+		width: 600px;
+		margin: auto;
+		left: calc(50% - 300px);
+		top:calc(50% - 100px);
+	    z-index: 1001;
+		font-size: 25px;
+		max-width:(100% - 40px);
+		position: fixed;
+	}
 .popup{
-	transition:transform 300ms ;
-	position: fixed;
-	top:calc(50% - 100px);
+	transition:all 500ms ;
 	opacity:1 !important;
-	transform: scale(1)!important;
-	
+	/* transform: scale(1)!important; */
 	
 	
 
