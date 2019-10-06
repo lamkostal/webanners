@@ -61,7 +61,7 @@
 
 	<section class="hero section">
 
-		<h1 id="titlos" class="heroh1 title is-3 displayf has-text-centered ">We enjoy making effective web-banners!</h1>
+		<h1 id="titlos" class="heroh1 title is-3 displayf has-text-centered ">Animated web-banners is our thing!</h1>
 		<div class="heroimg">
 
 			<svg viewBox="0 0 1734 669" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5">
@@ -263,7 +263,7 @@
 			<h2 class="trusted title has-text-centered is-2 sectionf heavyf">Trusted by</h2>
 			<hr>
 
-			<div class="level">
+			<div class="level trusted">
 				<div class="figure level-item"><img src="assets/kawasaki-logo.png" alt="Kawasaki" class="image logos "></div>
 				<div class="figure level-item"><img src="assets/peugeotscooters-logo.png" alt="Peugeot scooters" id="peugeot" class="image logos"></div>
 				<div class="figure level-item"><img src="assets/cfmoto-logo.png" alt="CFMOTO" class="image logos "></div>
@@ -289,7 +289,8 @@
 			<!--			<hr>-->
 			<div class="box column is-half is-offset-one-quarter">
 
-				<form >
+				<form name="banners_contact" netlify method="POST" netlify-honeypot="bot-field">
+					<input type="text" hidden name="bot-field" >
 					<div class="field">
 						<label class="label">Name</label>
 						<div class="control">
@@ -340,28 +341,7 @@
 						</div>
 					</div>
 	
-					<!-- <div class="field">
-						<div class="control">
-							<label class="checkbox">
-								<input type="checkbox">
-								I agree to the <a href="#">terms and conditions</a>
-							</label>
-						</div>
-					</div>
-	
-					<div class="field ">
-						<div class="control">
-							<label class="radio">
-								<input type="radio" name="agreed?">
-								Yes
-							</label>
-							<label class="radio">
-								<input type="radio" name="agreed?">
-								No
-							</label>
-						</div>
-					</div> -->
-	
+			
 					<div class="field ">
 						<div class="control">
 							<input type="submit" class="button is-link is-link" value="submit">
@@ -370,12 +350,12 @@
 					</div>
 				</div>
 				</form>
-			<div class="columns">
+			<!-- <div class="columns">
 				<div class="column is-half is-offset-one-quarter">
 					<h4 class="is-6 subtitle has-text-left has-text-grey-light">Or just send an email to: <a href="mailto:someone@somewhere.com?"><i class="fa fa-envelope"></i></a> soutki@kokok.com</h4>
 				</div>
 
-			</div>
+			</div> -->
 
 		</div>
 

@@ -62,7 +62,12 @@ hr {
 	padding-top: 40px;
 }
 */
-.trusted{}
+.trusted div{
+	filter: grayscale(100%);
+}
+.trusted div:hover{
+	filter: grayscale(0%);
+}
 .contact {
 	background-color: #ffffff;
 	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c7c7c7' fill-opacity='0.37' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
@@ -185,7 +190,7 @@ clip-path: polygon(45% 0, 85% 0, 60% 100%, 15% 100%);
 .bottom {
 	
 	padding: 20px;
-	background-color: darkslateblue;
+	background-color:#192450;
 }
 .testimonials{
 	
