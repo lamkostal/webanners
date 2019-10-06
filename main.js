@@ -1,6 +1,7 @@
 	new Vue({
 		el: '#works',
 		data: {
+			email: null,
 			message: 'Hello',
 			banners: [{
 					name: 'CFmoto-MT650',
@@ -69,5 +70,25 @@
 				]
 
 		},
+	
 
+	});
+	new Vue({
+		el:"#con_form",
+		data:{
+			email:null
+		},
+		methods:{
+			validEmail(email) {
+				var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				return re.test(email);
+			  },
+			alertInputEmail(){
+				if(this.email && !this.validEmail(this.email)){
+					return true;
+				}
+			},
+		
+			
+		}
 	});
