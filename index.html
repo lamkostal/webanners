@@ -17,12 +17,12 @@
 
 	<title> Webanners </title>
 	  <!-- AnyMod -->
-	  <script id="AnyMod-script">
+	  <!-- <script id="AnyMod-script">
 		(function (m,o,d,u,l,a,r,i,z,e) {
 		  u[m]={Project:o,rq:[],Opts:r,ready:function(j){u[m].rq.push(j)}};function j(s){return encodeURIComponent(btoa(s))};z=l.getElementById(m+'-'+a);r=u.location;
 		  e=[d+'/page/'+o+'/'+j(r.pathname)+'/'+j(r.host)+'?t='+Date.now(),d];e.map(function(w){i=l.createElement(a);i.defer=1;i.src=w;z.parentNode.insertBefore(i,z);});
 		})('AnyMod','8N436M','https://cdn.anymod.com/v2',window,document,'script',{ toolkit: true, tips: true, priority: 3 });
-	  </script>
+	  </script> -->
 	  <!-- /AnyMod -->
 
 </head>
@@ -205,18 +205,14 @@
 <!--{{message}}-->
 
 			<h2 class="title has-text-centered is-2 heavyf sectionf "> Recent Works </h2>
-
-
 			<h3 class="subtitle has-text-centered has-text-grey-light has-text-weight-light">
 				A sample of HTML5 banners created for clients over the last years.
 			</h3>
 			<!--			<hr>-->
-
 			<br>
 			<br>
 
 			<div class="columns is-multiline is-centered">
-
 
 				
 				<transition-group name="fade" class="columns is-multiline box">
@@ -232,7 +228,7 @@
 						</div>
 
 						<transition name="fade" mode="out-in" >
-							<div class="card-content" :key="banner" v-if="banner.visible">
+							<div class="card-content" :key="banner.name" v-if="banner.visible">
 								<div class="media">
 									<div class="media-content has-text-centered">
 										<p class="title is-4 has-text-centered">{{banner.name}}</p>
@@ -263,10 +259,10 @@
 
 		</div>
 	</section>
-
+<!-- 
 	<section id="about-section">
 		<div id="anymod-nklbdk"></div>
-	</section>
+	</section> -->
 
 
 	<section class="testimonials" id="testimonials">
@@ -291,9 +287,7 @@
 
 
 	<section class="section contact" id="contact">
-		<!--		<hr>-->
-		<!--<br>-->
-		<!--	<br>-->
+		
 
 		<div class=" container container1">
 			<h2 class="title heavyf sectionf is-2 has-text-centered ">Contact us</h2>
