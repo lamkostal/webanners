@@ -364,9 +364,6 @@ clip-path: polygon(45% 0, 85% 0, 60% 100%, 15% 100%);
 	animation-delay: 0.6s;
 	animation-timing-function: ease-out;
 }
-#equalizer{
-	transform: translateY(500px);
-}
 
 
 @keyframes scalesx{
