@@ -75,10 +75,22 @@ hr {
 
 
 .heroh1 {
-	margin: 2rem 0;
+	/* margin: 3rem 0 !important ; */
 	position: relative;
+	padding:1rem 0 3rem;
 	color: white;
+	
 }
+.z-text {
+	/* Tip: Apply CSS transforms here */
+	/* rotateX() == up/down */
+	/* rotateY() == left/right */
+	transform: rotateX(-10deg) rotateY(-5deg);
+ }
+ .z-layer:not(:first-child) {
+	color:#192450;
+ }
+ 
 
 
 
