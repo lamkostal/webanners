@@ -47,16 +47,16 @@ body {
 hr {
 	border: 0;
 	height: 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	border-top: 0px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 0px solid rgba(255, 255, 255, 0.3);
 }
 
 .bottom hr {
-	border: 0;
-	height: 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	
+	border-top: 0px ;
 	border-bottom: 0.1px solid grey;
 }
+
 
 .footerlink {
 	padding: 0.5rem;
@@ -92,13 +92,14 @@ hr {
 	padding: 1rem 0 3rem;
 	color: white;
 
+
 }
 
 .z-text {
 	/* Tip: Apply CSS transforms here */
 	/* rotateX() == up/down */
 	/* rotateY() == left/right */
-	transform: rotateX(-10deg) rotateY(-5deg);
+	transform: rotateX(-15deg) rotateY(-0deg);
 }
 
 .z-layer:not(:first-child) {
